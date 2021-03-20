@@ -5,15 +5,10 @@
 @import 'abstracts/variables';
 
 @import 'base/animations';
-
 @import 'base/typography';
 @import 'base/utilities';
 
 @import 'components/button';
-
-
-
-
 
 @import 'layout/grid';
 
@@ -40,4 +35,14 @@ body{
   color:$color-black-light;
   padding:2rem;
   
+}
+
+#root{
+  height:100%;
+}
+
+.App{
+  display:grid;
+   grid-template-columns:1fr;
+  grid-gap:2rem;
 }

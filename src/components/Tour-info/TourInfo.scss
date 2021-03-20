@@ -1,0 +1,62 @@
+@import '../../sass/abstracts/variables';
+
+.section-tour-info{
+
+  padding:6rem 0;
+  background-image: linear-gradient(
+    to right bottom ,
+    rgba($color-black,0.65),
+    rgba($color-desert-light,.3)) ,
+    url('../../images/give-me-hand.jpg');
+
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: relative;
+  
+}
+
+
+
+.tour-options{
+  
+  
+  background-color: rgba($color-white,0.6);
+  font-size:1.5rem;
+  padding:2.9rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 2rem 4rem rgba($color-black,0.15);
+  transition:all .3s;
+  height:auto;
+
+
+  &__icon{
+    font-size: 4rem;
+    color:$color-desert-dark;
+    margin-bottom:2rem;
+  }
+
+  &__ulList{
+    list-style:circle;
+
+    & li{
+      
+      white-space:nowrap;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      &:not(:last-child){
+        margin-bottom:1.1rem;
+      }
+    }
+  }
+
+  &:hover{
+    transform:translateY(-1.5rem) scale(1.03);
+    
+  }
+}
+

@@ -4,13 +4,13 @@ import './Header.scss';
 
 function Header() {
   return (
-    <header class="header">
-    <div class="header__text-box">
-      <h1 class="heading-primary u-margin-bottom-medium">
-        <span class="heading-primary--main">desert safari </span>
-        <span class="heading-primary--sub"> where dreams come true</span>
+    <header className="header">
+    <div className="header__text-box">
+      <h1 className="heading-primary u-margin-bottom-medium">
+        <span className="heading-primary--main">desert safari </span>
+        <span className="heading-primary--sub"> where dreams come true</span>
       </h1>
-      <a href="#" class="btn btn--white">explore safari</a>
+      <a href="#" className="btn btn--white">explore safari</a>
     </div>
   </header>
   )
