@@ -1,11 +1,16 @@
 @import '../../sass/abstracts/variables.scss';
 @import '../../sass/base/animations.scss';
+@import '../../sass/base/utilities.scss';
+@import '../../sass/components/button.scss';
+
+
+
 
 .header{
   background-image: linear-gradient(
     to right bottom ,
-    rgba($color-black,0.65),
-    rgba($color-desert-light,.3)) ,
+    rgba($color-black,0.8),
+    rgba($color-desert-light,.4)) ,
     url('../../images/car-on-sand.jpg');
 
 
@@ -34,7 +39,7 @@
   letter-spacing:1.3rem;
 
   &--main{
-    font-size: 6rem;
+    font-size: 5rem;
     display:block;
     animation: moveToRight 1s ease-in-out;
   }
@@ -44,6 +49,5 @@
     display:block;
     animation: moveToLeft 1s ease-in-out;
   }
-  
   
 }
