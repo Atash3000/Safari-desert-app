@@ -1,0 +1,28 @@
+
+
+
+.heading-secondary{
+  font-size: 4rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    to right,
+    rgba($color-desert-dark,0.7),
+    rgba($color-desert-light,0.7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.heading-tertiary{
+  font-size: $font-size-default;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  
+}
+
+.paragraph{
+  font-size: $font-size-default;
+  font-weight: 400;
+}
+
