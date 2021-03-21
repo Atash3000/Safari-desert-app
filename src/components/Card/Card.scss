@@ -22,7 +22,29 @@
     border-radius: 9px;
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem $color-black;
-    transition: all 0.5s;
+    transition: all 0.5s ;
+    
+    .btn {
+    &:hover + .box {
+        transform: scale(1);
+        transform: rotate(0deg); 
+        span {
+            transform: translateY(0);
+        }
+    }
+}
+
+.box {
+    overflow: hidden;
+    transform: scale(.1);
+    transform: rotate(-90deg);
+    transition: transform 330ms ease-in-out;
+    span {
+        transform: translateY(250%);
+        transition: transform 280ms ease-out 50ms;
+        display: block;
+    }
+};
 
     &--front{
       background-color:$color-white;
