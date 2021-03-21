@@ -41,6 +41,9 @@
 
   &__ulList{
     list-style:circle;
+    @include respond(tab-port){
+      list-style:none;
+    }
 
     & li{
       
