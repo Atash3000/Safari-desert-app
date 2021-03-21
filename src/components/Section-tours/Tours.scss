@@ -35,41 +35,57 @@
     border-radius: 0.8rem;
     //outline-offset: 0.7rem;
     @include respond(tab-port){
-      width:65%;
+      width:75%;
       }
 
     &--1{
       top:1rem;
       left:5%;
+      @include respond(tab-port){
+        top:0rem;
+        left:0rem;
+        width:65%;
+      
+        }
     }
     &--2{
       top:8rem;
       left:1rem;
+      @include respond(tab-port){
+        display:none;
+        
+        }
     }
     &--3{
       top:14rem;
       left:9rem;
       @include respond(tab-port){
-        display:none;
+        top:0rem;
+        left:6rem;
+        
         }
     }
     &--4{
       top:1rem;
-      left:30%;
+      left:39%;
+      @include respond(tab-port){
+      display:none;
+        }
     
     }
     &--5{
       top:4rem;
       left:60%;
       @include respond(tab-port){
-        display:none;
+        top:0rem;
+        left:12rem;
         }
     }
     &--6{
       top:12rem;
       left:50%;
       @include respond(tab-port){
-        display:none;
+      display:none;
         }
     }
 
