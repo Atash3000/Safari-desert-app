@@ -7,9 +7,16 @@
   background-image: linear-gradient(
     to right,
     rgba($color-desert-dark,0.7),
-    rgba($color-desert-light,0.7));
+    rgba($color-desert-light,0.9));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    opacity: 0.8;
+    transition: all 0.3s;
+
+    &:hover{
+      transform:scale(1.04);
+      opacity:1 ;
+    }
 }
 
 
