@@ -16,6 +16,18 @@
     &:hover{
       transform:scale(1.04);
       opacity:1 ;
+      @include respond(tab-port){
+    
+        transform:scale(1);
+      }
+    }
+
+    @include respond(tab-port){
+    
+      font-size: 3rem;
+    }
+    @include respond(phone){
+      font-size: 2rem;
     }
 }
 

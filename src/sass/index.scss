@@ -26,6 +26,20 @@
 html {
   font-size: 62.5%;
   font-family: $font-family-default;
+
+  @include respond(tab-land){
+    font-size:56.25%;
+  }
+  @include respond(tab-port){
+    font-size: 50%;
+  }
+
+  // @include respond(phone){
+  //   font-size: 40%;
+  // }
+  @include respond(big-desktop){
+    font-size: 75%;
+  }
 }
 
 
@@ -34,7 +48,10 @@ body{
   line-height: 1.7;
   color:$color-black-light;
   padding:2rem;
-  
+  // @include respond(tab-land){
+  //   width:100vw;
+  //   overflow-x: hidden;
+  // }
 }
 
 #root{
@@ -43,19 +60,7 @@ body{
 
 .App{
   display:grid;
-   grid-template-columns:1fr;
+  grid-template-columns:1fr;
   grid-gap:2rem;
 }
 
-@media screen and (max-width: 768px){
-  html {
-    font-size: 35.5%;
-  
-    
-  }
-  body{
-    padding:1rem;
-    width:100%;
-    overflow-x:hidden;
-  }
-}
