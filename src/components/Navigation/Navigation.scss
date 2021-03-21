@@ -100,7 +100,7 @@
   &__box{
     position:fixed;
     top:8.2rem;
-    right:7.2rem;
+    right:7.5rem;
     z-index: 1500;
     
   }
@@ -108,7 +108,7 @@
   &__line{
     border-radius: 2px;
     height:0.2rem;
-    width:3.7rem;
+    width:3.1rem;
     background-color: rgba($color-black,.7);
     color:#fff;
     transition:transform 0.3s, opacity 0.3s;
@@ -123,7 +123,7 @@
   &__line.active{
     position:fixed;
     top:8.8rem;
-    right:7.1rem;
+    right:7.5rem;
 
 
     &:nth-child(2){
