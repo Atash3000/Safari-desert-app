@@ -40,13 +40,9 @@
   }
 
   &__ulList{
-    list-style:circle;
-    @include respond(tab-port){
-      list-style:none;
-    }
 
     & li{
-      
+      list-style:none;
       white-space:nowrap;
       font-size: 1.5rem;
       text-transform: uppercase;

@@ -1,4 +1,6 @@
 @import '../../sass/abstracts/variables';
+@import '../../sass/abstracts/mixins';
+
 
 
 .footer{
@@ -6,11 +8,18 @@
   padding:18rem 0;
   font-size:1.4rem;
 
+  @include respond(tab-port){
+    padding:8rem 0;
+  }
+
 
   &__navigation{
     border-top:1px solid $color-white;
     padding-top:2rem;
     display:inline-block;
+    @include respond(tab-port){
+    width:100%;
+    }
 
   }
 
@@ -58,5 +67,8 @@
     float:right;
     letter-spacing:3px;
     line-height: 2rem;
+    @include respond(tab-port){
+      width:100%;
+      }
   }
 }

@@ -1,4 +1,6 @@
 @import '../../sass/abstracts/variables';
+@import '../../sass/abstracts/mixins';
+
 
 
 
@@ -8,13 +10,20 @@
   background-color: $color-white;
   padding:15rem 0;
   height:100%;
- 
+  @include respond(tab-port){
+    padding:7rem 0;
+    overflow: hidden;
+    
+  }
 }
 
 
 .composition{
   position: relative;
   height:100%;
+  @include respond(tab-port){
+  padding:15rem;
+  }
   &__photo{
     width:45%;
     box-shadow: 0 1.5rem 4rem #000;
@@ -25,6 +34,10 @@
     z-index: 10;
     border-radius: 0.8rem;
     //outline-offset: 0.7rem;
+    @include respond(tab-port){
+      width:65%;
+      }
+
     &--1{
       top:1rem;
       left:5%;
@@ -36,18 +49,28 @@
     &--3{
       top:14rem;
       left:9rem;
+      @include respond(tab-port){
+        display:none;
+        }
     }
     &--4{
       top:1rem;
       left:30%;
+    
     }
     &--5{
       top:4rem;
       left:60%;
+      @include respond(tab-port){
+        display:none;
+        }
     }
     &--6{
       top:12rem;
       left:50%;
+      @include respond(tab-port){
+        display:none;
+        }
     }
 
     &:hover{
