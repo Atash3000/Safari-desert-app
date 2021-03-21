@@ -48,10 +48,9 @@ body{
   line-height: 1.7;
   color:$color-black-light;
   padding:2rem;
-  // @include respond(tab-land){
-  //   width:100vw;
-  //   overflow-x: hidden;
-  // }
+  @include respond(tab-land){
+    padding:0;
+  }
 }
 
 #root{
@@ -62,5 +61,8 @@ body{
   display:grid;
   grid-template-columns:1fr;
   grid-gap:2rem;
+  @include respond(tab-land){
+    grid-gap:0rem;
+  }
 }
 
