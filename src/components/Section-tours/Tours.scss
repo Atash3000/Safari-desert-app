@@ -22,7 +22,7 @@
   position: relative;
   height:100%;
   @include respond(tab-port){
-  padding:15rem;
+  padding:15rem 0rem;
   }
   &__photo{
     width:45%;
@@ -35,7 +35,7 @@
     border-radius: 0.8rem;
     //outline-offset: 0.7rem;
     @include respond(tab-port){
-      width:75%;
+      width:65%;
       }
 
     &--1{
@@ -44,7 +44,7 @@
       @include respond(tab-port){
         top:0rem;
         left:0rem;
-        width:65%;
+        width:55%;
       
         }
     }
