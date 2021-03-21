@@ -95,13 +95,11 @@
   right:6rem;
   border-radius: 50%;
   z-index: 3000;
- 
-
-
   background-color: $color-white;
+
   &__box{
     position:fixed;
-    top:7.8rem;
+    top:8.2rem;
     right:7.2rem;
     z-index: 1500;
     
@@ -109,7 +107,7 @@
 
   &__line{
     border-radius: 2px;
-    height:0.4rem;
+    height:0.2rem;
     width:3.7rem;
     background-color: rgba($color-black,.7);
     color:#fff;
