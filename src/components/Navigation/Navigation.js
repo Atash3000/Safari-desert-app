@@ -17,9 +17,9 @@ function Navigation() {
 
       <div className="hamburger " onClick={showMenu}>
         <div className="hamburger__box">
-        <div className="hamburger__line"></div>
-        <div className="hamburger__line"></div>
-        <div className="hamburger__line"></div>
+        <div className={`hamburger__line ${active}`}></div>
+        <div className={`hamburger__line ${active}`}></div>
+        <div className={`hamburger__line ${active}`}></div>
         </div>
         
       </div>
