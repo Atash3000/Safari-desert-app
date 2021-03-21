@@ -109,14 +109,14 @@
 
   &__line{
     border-radius: 2px;
-    height:4px;
+    height:0.4rem;
     width:3.7rem;
     background-color: rgba($color-black,.7);
     color:#fff;
     transition:transform 0.3s, opacity 0.3s;
 
     &:not(:last-child){
-      margin-bottom: 5px;
+      margin-bottom: 0.5rem;
     }
   }
 
