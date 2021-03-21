@@ -2,7 +2,61 @@
 
 
 .footer{
-  background-color: $color-black-light;
+  background-color: $color-black;
   padding:18rem 0;
   font-size:1.4rem;
+
+
+  &__navigation{
+    border-top:1px solid $color-white;
+    padding-top:2rem;
+    display:inline-block;
+
+  }
+
+  &__list{
+    
+    
+  }
+
+  &__item{
+    list-style: none;
+    display:inline-block;
+    &:not(:last-child){
+      margin-right:1.5rem;
+    }
+  }
+
+  &__link{
+    &:link,
+    &:visited{
+      text-decoration:none;
+      color:$color-white;
+      text-transform: uppercase;
+      display:inline-block;
+      transition: all .2s;
+      background-color: $color-black;
+
+    }
+
+    &:hover,
+    &:active{
+      color:$color-desert-light;
+      box-shadow: 0 1rem 2rem rgba($color-black,0.6);
+      transform: scale(1.2);
+    }
+
+    
+  }
+
+  &__copyright{
+    color:$color-white;
+    border-top:1px solid $color-white;
+    padding-top:2rem;
+    //display: inline-block;
+    width:80%;
+    float:right;
+    letter-spacing:3px;
+    line-height: 2rem;
+  }
 }
