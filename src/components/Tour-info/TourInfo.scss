@@ -1,4 +1,6 @@
 @import '../../sass/abstracts/variables';
+@import '../../sass/abstracts/mixins';
+
 
 .section-tour-info{
 
@@ -15,7 +17,10 @@
   background-repeat: no-repeat;
 
   position: relative;
-  
+  @include respond(tab-port){
+     padding:9rem 0;
+     background-position: top;
+  }
 }
 
 
@@ -31,12 +36,23 @@
   box-shadow: 0 2rem 4rem rgba($color-black,0.15);
   transition:all .3s;
   height:auto;
+    @include respond(tab-port){
+    padding:3rem 1.6rem;
+    box-shadow: 0 2rem 4rem rgba($color-black,0.45);
 
+  }
 
   &__icon{
     font-size: 4rem;
     color:$color-desert-dark;
     margin-bottom:2rem;
+    @include respond(tab-port){
+    font-size: 3rem;
+    margin-bottom:1.7rem;
+  
+
+
+  }
   }
 
   &__ulList{
@@ -55,6 +71,11 @@
 
   &:hover{
     transform:translateY(-1.5rem) scale(1.03);
+
+    @include respond(tab-port){
+    transform:translateY(0) scale(1);
+
+    }
     
   }
 }
