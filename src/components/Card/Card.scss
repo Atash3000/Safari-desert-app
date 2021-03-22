@@ -6,6 +6,10 @@
 .section-card{
   background-color:$color-white;
   padding:12rem 0;
+  @include respond(tab-port){
+    padding:5rem 0;
+  }
+  
 }
 
 
@@ -184,7 +188,7 @@
     }
 
     @include respond(tab-port){
-  
+      
       height:auto;
       border-radius: 3px;
       background-color: $color-white;
