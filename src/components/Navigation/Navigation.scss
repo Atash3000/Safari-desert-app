@@ -73,7 +73,7 @@
       background-image: linear-gradient(120deg,transparent 0%,transparent 50%,$color-white 50%);
       background-size:220%;
       transition: all 0.4s;
-       @include respond(tab-port){
+      @include respond(tab-port){
       font-size: 2.6rem;
       padding:1rem 1.7rem;
       }
@@ -114,11 +114,11 @@
 
   &__box{
     position:fixed;
-    top:8.2rem;
+    top:8.1rem;
     right:7.5rem;
     z-index: 1500;
       @include respond(tab-port){
-    top:5.8rem;
+    top:5.7rem;
     right:5rem;
   }
     
@@ -126,10 +126,10 @@
 
   &__line{
     border-radius: 2px;
-    height:0.2rem;
+    height:0.3rem;
     width:3.1rem;
     background-color: rgba($color-black,.7);
-    color:#fff;
+    
     transition:transform 0.3s, opacity 0.3s;
 
     &:not(:last-child){
@@ -145,7 +145,7 @@
     right:7.5rem;
     @include respond(tab-port){
     top:6.4rem;
-    right:5.1rem;
+    right:4.9rem;
   }
 
 
@@ -155,11 +155,11 @@
     }
 
     &:nth-child(1){
-      transform:rotate(130deg);
+      transform:rotate(135deg);
     }
 
     &:nth-child(3){
-      transform:rotate(-130deg);
+      transform:rotate(-135deg);
       }
   }
 }
