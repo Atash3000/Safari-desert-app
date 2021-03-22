@@ -64,6 +64,9 @@
       }
       &-3{
         background-image: linear-gradient(to right bottom ,rgba($color-titan-yellow,0.8),rgba($color-titan-yellow,0.8));
+        @include respond(phone){
+          background-position:top;
+        }
       }
       
     }
@@ -81,6 +84,12 @@
     background-position:center;
     background-size:cover;
     clip-path: polygon(53% 0, 100% 0, 100% 100%, 66% 100%, 63% 100%, 0 68%, 0 0);
+    @include respond(phone){
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 81% 100%, 50% 100%, 28% 100%, 1% 74%, 0% 35%, 0 0);
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 81% 100%, 50% 100%, 28% 100%, 1% 74%, 0% 35%, 0 0);
+
+
+        }
 
     &--1{
       background-image: url('../../images/price-1.jpg');
@@ -113,6 +122,14 @@
     top:38%;
     left:2%;
     transform:rotate(17.5deg);
+    @include respond(phone){
+      font-size:1.4rem;
+      letter-spacing: 1px;
+       top:42%;
+       left:1%;
+       transform:rotate(31deg);
+
+    }
     
   }
 

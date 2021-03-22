@@ -6,8 +6,8 @@
 
   
     &__background{
-      height:5.8rem;
-      width:5.8rem;
+      height:5rem;
+      width:5rem;
       border-radius: 50%;
       position: fixed;
       top:6rem;
@@ -16,8 +16,8 @@
       z-index: 1000;
       transition :transform 0.5s cubic-bezier(0.86,0,0.87,1);
       @include respond(tab-port){
-        top:4rem;
-        right:4rem;
+        top:3.8rem;
+        right:3.5rem;
       }
       
     }
@@ -108,8 +108,8 @@
   z-index: 3000;
   background-color: $color-white;
   @include respond(tab-port){
-    top:4rem;
-    right:4rem;
+    top:3.5rem;
+    right:3.5rem;
   }
 
   &__box{
@@ -118,8 +118,8 @@
     right:7.5rem;
     z-index: 1500;
       @include respond(tab-port){
-    top:6.2rem;
-    right:5.6rem;
+    top:5.8rem;
+    right:5rem;
   }
     
   }
@@ -144,8 +144,8 @@
     top:8.8rem;
     right:7.5rem;
     @include respond(tab-port){
-    top:6.8rem;
-    right:5.6rem;
+    top:6.4rem;
+    right:5.1rem;
   }
 
 
