@@ -92,8 +92,8 @@ function Card() {
         </div>
       </div>
       <div class="u-text-center u-margin-top-big">
-      <a href="#" class="btn btn--yellow">discover all tours</a>
-
+      <a href="#" class="btn btn--blue">discover all tours</a>
+s
       </div>
     </section>
   )
